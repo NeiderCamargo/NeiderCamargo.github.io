@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     font-family: "work Sans";
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     /*me permite deslizar cuando haga clic en el menu*/
     scroll-behavior: smooth;
 }
+
 /*MENU*/
-.contenedor-header{
+.contenedor-header {
     background-color: #1e2326;
     position: fixed;
     width: 100%;
@@ -18,8 +21,9 @@ html{
     left: 0;
     z-index: 99;
 }
+
 /*Acomodar las posiciones del header*/
-.contenedor-header header{
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -27,34 +31,97 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
+
 /*DISEÑO DEL LOGO*/
-.contenedor-header header .logo a{
+.contenedor-header header .logo a {
     font-family: "Righteous";
     font-size: 36px;
     color: aqua;
     text-decoration: none;
 }
+
 .contenedor-header ul {
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
+
+.contenedor-header header nav ul li a {
     text-align: none;
     color: #ffff;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 /*para aplicarle color cuando se pase el click por encima*/
-.contenedor-header header nav ul li a:hover{
+.contenedor-header header nav ul li a:hover {
     color: aqua;
 }
-.nav-responsive{
-    background-color:rgb(26, 184, 184);
+
+.nav-responsive {
+    background-color: rgb(26, 184, 184);
     color: #ffff;
     padding: 5px 10px;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
+}
+
+/*INICIO DE PAGINA*/
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 150px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    color: #ffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px, solid #ffff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px, 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
 }
